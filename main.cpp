@@ -19,13 +19,13 @@ int count_lines()
 {
 	ifstream ifile("workers.txt");
 	char *str = new char [1024];
-    int i=0;
-    while (!ifile.eof())
-    {
-        ifile.getline(str, 1024, '\n');
-        i++;
-    }
-    delete str;
+    	int i=0;
+    	while (!ifile.eof())
+    	{
+        	ifile.getline(str, 1024, '\n');
+        	i++;
+    	}
+    	delete str;
 	ifile.close();
 	return i;
 }
